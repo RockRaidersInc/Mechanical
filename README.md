@@ -59,7 +59,7 @@ Next, we need to commit the changes to the HEAD, or the space before the reposit
 git commit -m "Commit message"
 ```
 
-Replace the test _Commit message_ with a description of what changes your commit makes. For example, if you created a new wheel design, your commit message might read "Adding CAD files for new wheel design." Remember to keep the quotes around your message in the command. Additionally, the message should be concise, but give a good description of the changes you've made. 
+Replace the text _Commit message_ with a description of what changes your commit makes. For example, if you created a new wheel design, your commit message might read "Adding CAD files for new wheel design." Remember to keep the quotes around your message in the command. Additionally, the message should be concise, but give a good description of the changes you've made. 
 
 Lastly, now we need to push everything to the repository so that everyone has access to the changes you've made. Use the following command:
 
