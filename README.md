@@ -3,7 +3,7 @@
 Hello, welcome to the repository for Rock Raider's mechanical subteam. This repository was created in the summer of 2019 to allow the mechanical subteam to perform version control on CAD developed. The goal is to ensure that everyone has accurate and up-to-date designs that are all stored in a common location with a uniform CAD file format. The team has decided that starting in summer of 2019, all CAD will be done in Solidworks, to ensure that file formats are identical.
 
 ## Getting Started
-
+### Git
 For many of you reading this, you likely have little to no experience with using Git for version control. Since the team is using Solidworks to CAD, Git is going to need to be used in a Windows OS, since Solidworks doesn't have a Linux distribution. To start, Git Bash needs to be installed. 
 
 Git Bash can be downloaded from here: https://gitforwindows.org/
@@ -31,13 +31,19 @@ git clone https://github.com/RockRaidersInc/Mechanical
 
 You'll know see that the directory you were in has a Mechanical folder. Congratulations, that is the repository with all of the teams current CAD and research in it. You're now free to create and design whatever, but please don't delete older designs or reorganize the folder tree. 
 
+### Solidworks
+
+Upperclassmen may know how to do this, but for freshman, the only CAD software that comes on the school laptops is NX. As such, you likely don't have Solidworks on your system. RPI offers us student licenses for free. Head to this link https://dotcio.rpi.edu/services/software-labs to request a license from the school. You'll need to log in with your RCS ID and password. Once you request the license, you'll need to wait a short while for the school to end you an email. The email should contain directions for how to install Solidworks and activate your license.
+
+As always, feel free to ask subteam leaders for help. The mechanical subteam lead should also be holding periodic CAD tutorial sessions to get people unfamiliar with Solidworks up to speed. 
+
 ## Committing Changes
 
 Now that you have access to the repository and have added some designs of your own, it's time to commit them so everyone can access them. Currently, you've only made changes to the folders and files on your local system (the working directory), not the repository itself. We need to "commit" these changes to the overal repository so that everyone has access to these changes. 
 
-### Side Note About Solidworks 
+### Side Note About Solidworks and Temporary Files 
 
-Before committing, save all your Solidworks parts and CLOSE them. When a part is open in Solidworks, a temporary file is generated and saved in the folder where your normal part is saved. The temporary file is deleted once you close the part. We DO NOT want to commit the temporary files to the repository, so PLEASE close all Solidworks parts before committing so that we don't commit unnecessary temporary files also.
+Before committing, save all your Solidworks parts and __CLOSE__ them. When a part is open in Solidworks, a temporary file is generated and saved in the folder where your normal part is saved. The temporary file is deleted once you close the part. We __DO NOT__ want to commit the temporary files to the repository, so __PLEASE__ close all Solidworks parts before committing so that we don't commit unnecessary temporary files also.
 
 To add your changes, we first need to propose the changes. To do so, use the following command:
 
