@@ -75,5 +75,7 @@ git pull
 
 It's that simple. The _git pull_ command will grab any updates and changes to the repository that you don't already have in your directory. It's good practice to pull before you start working on your project, to make sure you have the most up-to-date CAD. 
 
+## Extra Stuff
 
+I gave a very brief tutorial on how to use Git here, but if you want to know more you can visit this link https://rogerdudler.github.io/git-guide/.
 
