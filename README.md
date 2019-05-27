@@ -17,7 +17,7 @@ git config --global user.name "USER_NAME"
 git config --global user.email "MY_NAME@example.com"
 ```
 
-Next, we need to clone the current mechanical repository onto your computer. This essentially takes all the files and folders in the repository and copy and pastes them into a directory of your choosing. In the Git Bash command window, navigate to a directory where you want to store the repository using the cd command. For example, I store mine in a Rock Raiders folder on my desktop. To get to the repository, I perform the following: 
+Next, we need to clone the current mechanical repository onto your computer. This essentially takes all the files and folders in the repository and copy and pastes them into a directory of your choosing. In the Git Bash command window, navigate to a directory where you want to store the repository using the ```cd``` command. For example, I store mine in a Rock Raiders folder on my desktop. To get to the repository, I perform the following: 
 
 ```
 cd Desktop/"Rock Raiders"
