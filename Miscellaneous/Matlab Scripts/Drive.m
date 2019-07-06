@@ -11,9 +11,9 @@ mass = 50; %kg, slightly over for a better factor of safety.
 gravity = 9.81; %m/s^2
 weight = mass * gravity; %N
 wheel_radius = .3048 / 2; %m
-target_speed = 2; %m/s
+target_speed = 1; %m/s
 motors = 4; %# of motors
-gear_ratio = 36; %Gear Ratio
+gear_ratio = 81; %Gear Ratio
 
 %% Rolling Resistance
 %I'd like to point out that we could determine this resistance by pulling
@@ -103,11 +103,11 @@ hold off
 
 %% Creating Table for Values of Motor Requirements
 
-slope = [0; 15; 30; 45; 60];
-torque = [total_torque(1); total_torque(15); total_torque(30); total_torque(45); total_torque(60)];
+slope = [0; 10; 20; 30; 40];
+torque = [total_torque(1); total_torque(10); total_torque(20); total_torque(30); total_torque(40)];
 wheel_torque = torque / motors;
 motor_torque = wheel_torque / gear_ratio;
-power = [power_total(1); power_total(15); power_total(30); power_total(45); power_total(60)];
+power = [power_total(1); power_total(10); power_total(20); power_total(30); power_total(40)];
 motor_power = power / motors;
 names = {'Degree'; 'Torque'; 'WheelTorque'; 'MotorTorque'; 'TotalPower'; 'MotorPower'};
 disp('Table for necessary motor requirements.')
