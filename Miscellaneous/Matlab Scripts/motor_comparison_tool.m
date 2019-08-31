@@ -1,8 +1,8 @@
 %Battery Voltage
-V=11.7;
+V=23.4;
 
 %Slope (determines torque)
-slope=0;
+slope=10;
 
 %Motor definitions
 %Put all motors you want to compare
@@ -10,7 +10,6 @@ slope=0;
 %Acceptable model names: Redline, CIM, Mini CIM, 775pro, BAG
 motors = [
     motor("Redline", 81)
-    motor("CIM", 81)
 ];
 
 
@@ -63,6 +62,8 @@ end
 function t = getTorque(angle)
     if angle==0
         t=1.5511;
+    elseif angle==10
+        t=4.4746;
     elseif angle==15
         t=6.0722;
     elseif angle==30
