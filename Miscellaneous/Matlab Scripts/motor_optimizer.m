@@ -1,13 +1,19 @@
 %Outputs optimal gear ratio for the motor
 
-%Only change this line (Gear ratio should always be 1)
+%Motor to optimize (gear ratio must be 1)
 m=motor("Redline", 1);
 
-%Seriously, don't touch any thing else
-syms x;
+%Torque at the desired operating point (Nm)
+torque=39.22;
 
-T1=4.4746;
-omega=1/(pi*.3048)*60;
+%Speed at the desired operating point (RPM)
+speed=.5*60;
+
+%Battery voltage
+voltage=11.7;
+
+%Don't change anything below this comment
+syms x;
 
 current1=.5;
 torque1=0;
@@ -26,10 +32,10 @@ T0=m.t0;
 R=m.r;
 kv=m.kv;
 
-fun=@(x) (T1/x/ki+T0/ki)*((T1/x/ki+T0/ki)*R+kv*omega*x);
-upperbound=vpasolve((T1/x/ki+T0/ki)*R+kv*omega*x==23.4);
+fun=@(x) (torque/x/ki+T0/ki)*((torque/x/ki+T0/ki)*R+kv*speed*x);
+upperbound=vpasolve((torque/x/ki+T0/ki)*R+kv*speed*x==voltage);
 if isreal(upperbound(2))
-    fminbnd(fun,T1/(23.4*ki/R-T0),double(upperbound(2)))
+    fminbnd(fun,torque/(voltage*ki/R-T0),double(upperbound(2)))
 else
     "Not suitable"
 end
