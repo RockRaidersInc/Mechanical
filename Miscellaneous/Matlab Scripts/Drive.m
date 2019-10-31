@@ -7,13 +7,13 @@ clear, clc
 %% Constants
 %Declaration of several constants regarding the rover.
 motor_voltage = 12; %Volts
-mass = 50; %kg, slightly over for a better factor of safety.
+mass = 60; %kg, slightly over for a better factor of safety.
 gravity = 9.81; %m/s^2
 weight = mass * gravity; %N
-wheel_radius = .3048 / 2; %m
-target_speed = 1; %m/s
-motors = 4; %# of motors
-gear_ratio = 81; %Gear Ratio
+wheel_radius = .2 / 2; %m
+target_speed = 2.25; %m/s
+motors = 2; %# of motors
+gear_ratio = 36; %Gear Ratio
 
 %% Rolling Resistance
 %I'd like to point out that we could determine this resistance by pulling
